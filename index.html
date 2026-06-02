@@ -24,7 +24,7 @@
                 </div>
                 <div class="input"><input id="expense-amount" type="number" placeholder="Enter cost of product"></div>
                 <div class="input"><input id="productTitle" type="text" placeholder="Enter title of product"></div>
-                <div class="btn"><button  onclick="get_exp_amount(); balance() ;list(); item()">Check Amount</button></div>
+                <div class="btn"><button  onclick="get_exp_amount(); balance() ; show();addDiv()">Check Amount</button></div>
             </div>
         </div>
         <div class="balance">
@@ -50,14 +50,8 @@
             </div>
         </div>
         <h1>Expense list</h1>
-        <div class="expense-lists">
-            <div class="product"><input id="product" type="text" disabled></div>
-            <div class="rupees"><input id="expense" type="text" disabled></div>
-            <div class="side-bar">
-                <div class="edit"><i class="bi bi-pencil-square"></i></div>
-                <div class="delete" onclick="del()"><i class="bi bi-trash3-fill"></i></div>
-            </div>
-        </div>
+        
+        <div id="expense-container" onclick="del()"></div>
     </div>
 </body>
 </html>

@@ -80,19 +80,22 @@ h1 {
     display: none;
 }
 
-.expense-lists {
+#expense-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 17%;
+    gap: 15px;
     padding: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 15px;
     margin: 5%;
     width: 90%;
 }
+.hidden{
+
+    display:  none;
+}
 .product input, .rupees input{
-    /* background-color: transparent; */
     padding: 2px 4px ;
 }
 .side-bar {
@@ -103,4 +106,14 @@ h1 {
 }
 i{
     font-size: 18px;
+}
+.expense-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 17%;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 105%;
 }
