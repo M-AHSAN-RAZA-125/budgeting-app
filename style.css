@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 70%;
+    margin: 10% 15%;
+    border: 2px solid rgba(0, 0, 0, 0.399);
+    border-radius: 15px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5%;
+    background-color: rgba(220, 220, 220, 0.269);
+    margin: 5%;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.total,
+.expense {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p {
+    font-size: 22px;
+    font-weight: 750;
+}
+
+.inputs input {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn button {
+    padding: 10px 20px;
+    background-color: rgba(220, 220, 220, 0.7);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.balance {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(220, 220, 220, 0.7);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bal-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-bal input {
+    padding: 5px 10px;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 5%;
+    display: none;
+}
+
+.expense-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 17%;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5%;
+    width: 90%;
+}
+.product input, .rupees input{
+    /* background-color: transparent; */
+    padding: 2px 4px ;
+}
+.side-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 250%;
+}
+i{
+    font-size: 18px;
+}

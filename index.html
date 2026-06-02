@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="inputs">
+            <div class="total">
+                <div class="p">
+                    <p>Budget</p>
+                </div>
+                <div class="input"><input id="total-amount" type="number" placeholder="Enter Total Amount"></div>
+                <div class="btn"><button onclick="get_t_amount()">Set budget</button></div>
+            </div>
+            <div class="expense">
+                <div class="p">
+                    <p>Expenses</p>
+                </div>
+                <div class="input"><input id="expense-amount" type="number" placeholder="Enter cost of product"></div>
+                <div class="input"><input id="productTitle" type="text" placeholder="Enter title of product"></div>
+                <div class="btn"><button  onclick="get_exp_amount(); balance() ;list(); item()">Check Amount</button></div>
+            </div>
+        </div>
+        <div class="balance">
+            <div class="data">
+                <div class="total-bal bal-input">
+                    <div class="p-bal">
+                        <p>Total Budget</p>
+                    </div>
+                    <div class="input-bal"><input id="bal_t_amount" type="text" disabled></div>
+                </div>
+                <div class="expense-bal bal-input">
+                    <div class="p-bal">
+                        <p>Expenses</p>
+                    </div>
+                    <div class="input-bal"><input id="bal_expense" type="text" disabled></div>
+                </div>
+                <div class="recent-bal bal-input">
+                    <div class="p-bal">
+                        <p>Balance</p>
+                    </div>
+                    <div class="input-bal"><input id="current" type="text" disabled></div>
+                </div>
+            </div>
+        </div>
+        <h1>Expense list</h1>
+        <div class="expense-lists">
+            <div class="product"><input id="product" type="text" disabled></div>
+            <div class="rupees"><input id="expense" type="text" disabled></div>
+            <div class="side-bar">
+                <div class="edit"><i class="bi bi-pencil-square"></i></div>
+                <div class="delete" onclick="del()"><i class="bi bi-trash3-fill"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
